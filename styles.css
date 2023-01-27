@@ -221,4 +221,11 @@ body {
     margin-left: 15px;
     margin-bottom: 18px;
   }
+}
+@media only screen and (min-height: 1000px) and (min-width: 768px) {
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+  }
 }/*# sourceMappingURL=styles.css.map */
