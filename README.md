@@ -12,6 +12,6 @@ git clone https://github.com/Michalbeblocinski/mobitronic.git
 cd mobitronic
 3. Install the required dependencies: 
 npm install
-4. Compile SCSS to CSS
+4. Compile SCSS to CSS:
 npm run scss
 5. Open the index.html file in your browser to view the "Under Construction" page.
