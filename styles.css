@@ -33,7 +33,7 @@ body {
 }
 
 .background-image {
-  background-image: url("./assets/Background.png");
+  background-image: url("./assets/background.png");
   position: absolute;
   height: 771px;
   top: 0;
