@@ -65,18 +65,20 @@ body {
 
 .main-container__title {
   min-height: 144px;
+  text-align: center;
+  margin: 151px 15px 36px 15px;
+}
+.main-container__title h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 72px;
-  text-align: center;
   color: #FFFFFF;
-  margin: 151px 15px 36px 15px;
 }
 
 @media only screen and (max-width: 450px) {
-  .main-container__title {
+  .main-container__title h1 {
     font-size: 32px;
     line-height: 48px;
     margin: 114px 16px 35px 7px;
