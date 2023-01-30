@@ -48,7 +48,7 @@ body {
     background-position: center;
     background-size: cover;
     z-index: -3;
-    
+
     .background-image--color {
         width: inherit;
         height: inherit;
@@ -78,7 +78,7 @@ body {
 }
 
 .main-container__title {
-    margin-top: 151px;
+
     min-height: 144px;
     font-family: 'Poppins';
     font-style: normal;
@@ -87,24 +87,23 @@ body {
     line-height: 72px;
     text-align: center;
     color: $white;
-    margin-bottom: 36px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 151px 15px 36px 15px;
 }
 
 @media only screen and (max-width: 450px) {
     .main-container__title {
-        margin-top: 114px;
+
         font-size: 32px;
         line-height: 48px;
-        margin-left: 7px;
-        margin-right: 16px;
-        margin-bottom: 35px;
+        margin: 114px 16px 35px 7px;
     }
 }
 
-.main-container--red-text:hover {
+.main-container--red-text {
     color: $red;
+    &:hover{
+        color: $white; 
+    }
 }
 
 .main-container__allegro {
@@ -119,6 +118,7 @@ body {
     position: relative;
     margin-bottom: 93px;
 
+
     &::before {
         position: absolute;
         top: 0%;
@@ -131,22 +131,26 @@ body {
         color: $white;
     }
 
-    &::after {
-        position: absolute;
-        bottom: -34px;
-        width: 319px;
-        height: 30px;
-        z-index: -1;
-        content: "Sprawdź naszą ofertę";
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        border-radius: 10px;
-        color: $white;
-    }
+
+}
+
+.main-container__allegro-link-div {
+    position: absolute;
+    bottom: -34px;
+    width: 319px;
+    height: 30px;
+    text-align: center;
+}
+
+.main-container__allegro-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: $white;
 }
 
 @media only screen and (max-width: 450px) {
@@ -157,8 +161,7 @@ body {
 
 .main-container__cards-row {
     box-sizing: border-box;
-    margin-left: 29px !important;
-    margin-right: 29px !important;
+    margin: 0px 29px 0px 29px !important;
 
 }
 
@@ -225,8 +228,7 @@ body {
     line-height: 18px;
     text-align: right;
     color: $blue;
-    margin-right: 60px;
-    margin-bottom: 20px;
+    margin: 0px 60px 20px 0px;
 }
 
 .main-container--last-child {
@@ -242,13 +244,12 @@ body {
     .copyright {
         font-size: 10px;
         text-align: center;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-bottom: 18px;
+        margin: 0px 15px 18px 15px;
     }
 }
-@media only screen and (min-height:1000px) and (min-width:768px)  {
-   
+
+@media only screen and (min-height:1000px) and (min-width:768px) {
+
     .copyright {
         position: absolute;
         bottom: 20px;
