@@ -16,4 +16,4 @@ npm install
    npm install -g node-sass
 5. Run the build of the .scss file to .css: 
    node-sass styles.scss styles.css
-6. Open the index.html file in your browser to view the "Under Construction" page.
+6. Open the index.html file in your browser to view the "Under Construction" page
