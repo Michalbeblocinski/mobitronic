@@ -4,13 +4,11 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
 .navbar__logo {
   position: absolute;
   top: 24px;
   left: 60px;
 }
-
 .navbar__facebook {
   position: absolute;
   top: 35px;
@@ -41,7 +39,7 @@ body {
   background-size: cover;
   z-index: -3;
 }
-.background-image .background-image--color {
+.background-image--color {
   width: inherit;
   height: inherit;
   mix-blend-mode: multiply;
@@ -58,17 +56,16 @@ body {
     height: 620px;
   }
 }
-.main-container {
+.grid {
   width: 100% !important;
   align-items: center;
 }
-
-.main-container__title {
+.grid__title {
   min-height: 144px;
   text-align: center;
   margin: 151px 15px 36px 15px;
 }
-.main-container__title h1 {
+.grid__title h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -76,22 +73,13 @@ body {
   line-height: 72px;
   color: #FFFFFF;
 }
-
-@media only screen and (max-width: 450px) {
-  .main-container__title h1 {
-    font-size: 32px;
-    line-height: 48px;
-    margin: 114px 16px 35px 7px;
-  }
-}
-.main-container--red-text {
+.grid--red-text {
   color: #FF0000;
 }
-.main-container--red-text:hover {
+.grid--red-text:hover {
   color: #FFFFFF;
 }
-
-.main-container__allegro {
+.grid__allegro {
   width: 319px;
   height: 109px;
   background: #FFFFFF;
@@ -103,7 +91,7 @@ body {
   position: relative;
   margin-bottom: 93px;
 }
-.main-container__allegro::before {
+.grid__allegro::before {
   position: absolute;
   top: 0%;
   width: 319px;
@@ -114,16 +102,7 @@ body {
   border-radius: 10px;
   color: #FFFFFF;
 }
-
-.main-container__allegro-link-div {
-  position: absolute;
-  bottom: -34px;
-  width: 319px;
-  height: 30px;
-  text-align: center;
-}
-
-.main-container__allegro-link {
+.grid__allegro-link {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -133,18 +112,18 @@ body {
   border-radius: 10px;
   color: #FFFFFF;
 }
-
-@media only screen and (max-width: 450px) {
-  .main-container__allegro {
-    margin-bottom: 71px !important;
-  }
+.grid__allegro-link-div {
+  position: absolute;
+  bottom: -34px;
+  width: 319px;
+  height: 30px;
+  text-align: center;
 }
-.main-container__cards-row {
+.grid__cards-row {
   box-sizing: border-box;
   margin: 0px 29px 0px 29px !important;
 }
-
-.main-container__text {
+.grid__text {
   width: 652px;
   min-height: 105px;
   font-family: "Poppins";
@@ -154,22 +133,9 @@ body {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 74px !important;
+  margin-bottom: 68px !important;
 }
-
-@media only screen and (max-width: 661px) {
-  .main-container__text {
-    width: 351px;
-    margin-bottom: 51px !important;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .main-container__text {
-    width: auto;
-    margin-bottom: 51px !important;
-  }
-}
-.main-container__card {
+.grid__card {
   box-sizing: border-box;
   height: 117px;
   background: #242C5B;
@@ -189,13 +155,42 @@ body {
   text-align: center;
   align-items: center;
 }
+.grid--last-child {
+  margin-bottom: 38px !important;
+}
 
+@media only screen and (max-width: 450px) {
+  .grid__title {
+    margin: 114px 16px 35px 7px;
+  }
+  .grid__title h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .grid__allegro {
+    margin-bottom: 71px !important;
+  }
+}
+@media only screen and (max-width: 661px) {
+  .grid__text {
+    width: 351px;
+    margin-bottom: 51px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .grid__text {
+    width: auto;
+    margin-bottom: 51px !important;
+  }
+}
 @media only screen and (max-width: 380px) {
-  #main-container__stars {
+  #grid__stars {
     width: 44px;
   }
 }
-.copyright {
+.footer__copyright {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -206,22 +201,18 @@ body {
   margin: 0px 60px 20px 0px;
 }
 
-.main-container--last-child {
-  margin-bottom: 38px !important;
-}
-
 @media only screen and (max-width: 768px) {
-  .main-container--last-child {
-    margin-bottom: 66px !important;
+  .grid--last-child {
+    margin-bottom: 35px !important;
   }
-  .copyright {
+  .footer__copyright {
     font-size: 10px;
     text-align: center;
     margin: 0px 15px 18px 15px;
   }
 }
 @media only screen and (min-height: 1000px) and (min-width: 768px) {
-  .copyright {
+  .footer__copyright {
     position: absolute;
     bottom: 20px;
     right: 60px;
