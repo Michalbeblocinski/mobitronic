@@ -201,9 +201,9 @@ body {
   margin: 0px 60px 20px 0px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .grid--last-child {
-    margin-bottom: 35px !important;
+    margin-bottom: 68px !important;
   }
   .footer__copyright {
     font-size: 10px;
@@ -211,7 +211,7 @@ body {
     margin: 0px 15px 18px 15px;
   }
 }
-@media only screen and (min-height: 1000px) and (min-width: 768px) {
+@media only screen and (min-height: 1000px) and (min-width: 1200px) {
   .footer__copyright {
     position: absolute;
     bottom: 20px;
